@@ -59,7 +59,7 @@ DELIMITER ;
 DROP TABLE `Nfl`.`Schedule`;
 CALL whilePop(0);
 
-SELECT CONCAT(a.`firstName`,' ',a.`lastName`) AS `Name` , p.`idClasses`,p.yardsGained,p.`quarter`,p.`week`,p.`year` from `Nfl`.`Passes` p INNER JOIN `Nfl`.`Players` a
+SELECT CONCPassesAT(a.`firstName`,' ',a.`lastName`) AS `Name` , p.`idClasses`,p.yardsGained,p.`quarter`,p.`week`,p.`year` from `Nfl`.`Passes` p INNER JOIN `Nfl`.`Players` a
 on (p.`idPlayers`= a.`idPlayers`)
  where `year` = 2017;
  select * from `Nfl`.`Schedule`
