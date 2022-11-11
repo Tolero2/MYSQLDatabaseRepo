@@ -55,5 +55,5 @@ DELIMITER $$
 -- set
 -- `idPlayers` =FLOOR(RAND()*(10-1)+1);
 DELIMITER ;
-
+TRUNCATE TABLE `Address_Book`.`People`;
 DELIMITER $$
